@@ -1,0 +1,4 @@
+source 'https://rubygems.org'
+
+gem 'aws-sdk-core', '3.188.0'
+gem 'aws-sdk-sqs', '1.67.0'

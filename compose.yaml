@@ -1,0 +1,12 @@
+services:
+  moto:
+    ports:
+      - "5001:5001"
+    build: ./moto
+  aws-ruby:
+    build: ./aws-ruby-sdk
+    tty: true
+    links:
+      - moto
+    depends_on:
+      - moto
